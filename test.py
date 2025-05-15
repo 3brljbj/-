@@ -8,8 +8,8 @@ tf.disable_v2_behavior()
 
 def generate_data(num_points):
     vectors = []
-    x = np.random.normal(2, 2, num_points) + 10  # ⟵ 동작 코드 구현 필요 (2점)                            # ⟵ 동작 코드 구현 필요 (2점)
-    noise = 2 * np.random.normal(0, 3, num_points)  # ⟵ 동작 코드 구현 필요 (2점)                       # ⟵ 동작 코드 구현 필요 (2점)
+    x = np.random.normal(2, 2, num_points) + 10  # ⟵ 동작 코드 구현 필요 (2점)                     
+    noise = 2 * np.random.normal(0, 3, num_points)  # ⟵ 동작 코드 구현 필요 (2점)                  
     y = 5 * x + noise  # ⟵ 동작 코드 구현 필요 (2점)
     vectors.append([ x, y ])  # ⟵ 동작 코드 구현 필요 (2점)
     x_data = np.array([v[0] for v in vectors])
